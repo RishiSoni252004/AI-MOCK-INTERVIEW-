@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prepwise creates tailored mock interviews from your resume and target role.">
+  <title>Prepwise — AI Resume Mock Interview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Prepwise home">
+      <span class="brand-mark">P</span>
+      <span>prepwise</span>
+    </a>
+    <nav>
+      <button class="nav-link" data-scroll="how-it-works">How it works</button>
+      <button class="nav-link" data-scroll="features">Features</button>
+    </nav>
+    <button class="button button-ghost small" id="headerStart">Start interview</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> Your resume. Your questions. Your edge.</div>
+        <h1>Practice the interview <em>you'll actually get.</em></h1>
+        <p>Prepwise turns your resume and target role into a tailored mock interview, then gives you direct, actionable coaching.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" id="heroStart">
+            Build my interview <span aria-hidden="true">→</span>
+          </button>
+          <span class="micro-copy">Free · No account needed</span>
+        </div>
+        <div class="trust-row">
+          <div class="avatars">
+            <span>AK</span><span>MR</span><span>JS</span>
+          </div>
+          <p><strong>4,800+</strong> practice interviews completed</p>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Interview preview">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="preview-card">
+          <div class="preview-top">
+            <div>
+              <span class="live-dot"></span>
+              <span>Interview in progress</span>
+            </div>
+            <span class="timer">08:42</span>
+          </div>
+          <div class="interviewer">
+            <div class="interviewer-avatar">M</div>
+            <div>
+              <strong>Maya</strong>
+              <span>AI Interview Coach</span>
+            </div>
+            <div class="sound-wave"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="question-preview">
+            <span>QUESTION 3 OF 8</span>
+            <p>“You improved onboarding conversion by 18%. Walk me through the decisions that drove that result.”</p>
+          </div>
+          <div class="answer-bars">
+            <span style="--w: 88%"></span>
+            <span style="--w: 70%"></span>
+            <span style="--w: 82%"></span>
+          </div>
+          <div class="preview-controls">
+            <div><span>●</span> Recording answer</div>
+            <button aria-label="Pause recording">Ⅱ</button>
+          </div>
+        </div>
+        <div class="score-float">
+          <span>Answer strength</span>
+          <strong>84<span>/100</span></strong>
+          <div class="mini-meter"><i></i></div>
+        </div>
+        <div class="tag-float">Role-specific questions <span>✓</span></div>
+      </div>
+    </section>
+
+    <section class="steps-section" id="how-it-works">
+      <div class="section-heading">
+        <span>HOW IT WORKS</span>
+        <h2>From resume to ready in three steps.</h2>
+        <p>No generic question banks. Every interview is built around your actual experience.</p>
+      </div>
+      <div class="steps-grid">
+        <article>
+          <span class="step-number">01</span>
+          <div class="step-icon">↥</div>
+          <h3>Share your resume</h3>
+          <p>Upload a file or paste your experience. We identify your skills, impact, and career story.</p>
+        </article>
+        <article>
+          <span class="step-number">02</span>
+          <div class="step-icon">◎</div>
+          <h3>Choose your target</h3>
+          <p>Tell us the role and interview style. Your questions adapt to the job you want.</p>
+        </article>
+        <article>
+          <span class="step-number">03</span>
+          <div class="step-icon">✦</div>
+          <h3>Practice and improve</h3>
+          <p>Answer out loud or in writing, then get clear feedback on substance, structure, and delivery.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-strip" id="features">
+      <div><strong>Resume-aware</strong><span>Questions grounded in your real work</span></div>
+      <div><strong>Private by design</strong><span>Your data stays in this browser</span></div>
+      <div><strong>Actionable feedback</strong><span>Specific coaching, not vague scores</span></div>
+    </section>
+  </main>
+
+  <div class="app-shell" id="appShell" aria-hidden="true">
+    <aside class="app-sidebar">
+      <a class="brand light" href="#" id="appHome">
+        <span class="brand-mark">P</span><span>prepwise</span>
+      </a>
+      <div class="progress-list">
+        <div class="progress-item active" data-step="setup"><span>1</span><div><strong>Interview setup</strong><small>Resume and target role</small></div></div>
+        <div class="progress-line"></div>
+        <div class="progress-item" data-step="review"><span>2</span><div><strong>Resume review</strong><small>Confirm your profile</small></div></div>
+        <div class="progress-line"></div>
+        <div class="progress-item" data-step="interview"><span>3</span><div><strong>Mock interview</strong><small>Answer tailored questions</small></div></div>
+        <div class="progress-line"></div>
+        <div class="progress-item" data-step="report"><span>4</span><div><strong>Coaching report</strong><small>Review your feedback</small></div></div>
+      </div>
+      <div class="privacy-note">
+        <span>⌾</span>
+        <div><strong>Your data is private</strong><p>Resume content stays on your device and is never uploaded.</p></div>
+      </div>
+    </aside>
+
+    <section class="app-main">
+      <button class="close-app" id="closeApp" aria-label="Close app">×</button>
+
+      <div class="app-view active" id="setupView">
+        <div class="view-heading">
+          <span class="kicker">STEP 1 OF 4</span>
+          <h2>Let's build your interview.</h2>
+          <p>Start with your resume and the role you're preparing for.</p>
+        </div>
+        <div class="setup-grid">
+          <div class="panel resume-panel">
+            <div class="panel-heading">
+              <div><span class="panel-icon">▤</span><div><h3>Your resume</h3><p>PDF, TXT, or paste text</p></div></div>
+              <button class="text-button" id="sampleResume">Use sample</button>
+            </div>
+            <label class="upload-zone" for="resumeFile">
+              <input type="file" id="resumeFile" accept=".pdf,.txt,.md">
+              <span class="upload-icon">↥</span>
+              <strong>Drop your resume here</strong>
+              <p>or click to browse your files</p>
+              <small>PDF or TXT · Max 5 MB</small>
+            </label>
+            <div class="divider"><span>OR PASTE RESUME TEXT</span></div>
+            <textarea id="resumeText" placeholder="Paste your work experience, skills, and education here..."></textarea>
+            <div class="file-status" id="fileStatus"></div>
+          </div>
+
+          <div class="panel target-panel">
+            <div class="panel-heading">
+              <div><span class="panel-icon coral">◎</span><div><h3>Your target</h3><p>Shape the interview focus</p></div></div>
+            </div>
+            <label>Target role
+              <input type="text" id="targetRole" placeholder="e.g. Senior Product Designer">
+            </label>
+            <label>Company or industry <span>Optional</span>
+              <input type="text" id="targetCompany" placeholder="e.g. Fintech startup">
+            </label>
+            <label>Interview style</label>
+            <div class="style-options">
+              <button class="style-card selected" data-style="balanced"><span>◈</span><strong>Balanced</strong><small>Behavioral + role-specific</small></button>
+              <button class="style-card" data-style="behavioral"><span>♢</span><strong>Behavioral</strong><small>Stories and soft skills</small></button>
+              <button class="style-card" data-style="technical"><span>⌘</span><strong>Technical</strong><small>Skills and problem solving</small></button>
+            </div>
+            <label>Interview length
+              <select id="questionCount">
+                <option value="5">Quick practice · 5 questions</option>
+                <option value="8" selected>Full interview · 8 questions</option>
+                <option value="10">Deep practice · 10 questions</option>
+              </select>
+            </label>
+            <button class="button button-primary full" id="analyzeButton">Analyze resume <span>→</span></button>
+            <p class="form-error" id="formError"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-view" id="reviewView">
+        <div class="view-heading row">
+          <div><span class="kicker">STEP 2 OF 4</span><h2>We found your story.</h2><p>Review the details we'll use to personalize your interview.</p></div>
+          <div class="analysis-badge"><span>✓</span> Resume analyzed</div>
+        </div>
+        <div class="review-layout">
+          <div class="panel profile-card">
+            <div class="profile-top">
+              <div class="profile-monogram" id="profileMonogram">AS</div>
+              <div><h3 id="profileName">Alex Smith</h3><p id="profileTitle">Product Designer</p></div>
+            </div>
+            <div class="profile-stat-row">
+              <div><span>Experience</span><strong id="experienceYears">5+ years</strong></div>
+              <div><span>Target role</span><strong id="reviewRole">Senior Product Designer</strong></div>
+            </div>
+            <div class="profile-section"><span>TOP SKILLS</span><div class="chip-list" id="skillsList"></div></div>
+            <div class="profile-section"><span>EXPERIENCE HIGHLIGHTS</span><ul id="highlightsList"></ul></div>
+          </div>
+          <div class="review-side">
+            <div class="panel insight-card">
+              <span class="insight-icon">✦</span>
+              <div><h3>Your interview focus</h3><p id="focusSummary">We'll explore your product thinking, measurable impact, collaboration, and leadership.</p></div>
+            </div>
+            <div class="panel question-sample">
+              <div class="panel-heading"><div><span class="panel-icon dark">?</span><div><h3>Question preview</h3><p>Generated from your experience</p></div></div></div>
+              <blockquote id="questionPreview"></blockquote>
+              <div class="question-tags"><span>Resume-based</span><span id="styleTag">Balanced</span></div>
+            </div>
+            <div class="review-actions">
+              <button class="button button-ghost" id="backToSetup">← Edit details</button>
+              <button class="button button-primary" id="beginInterview">Begin interview <span>→</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-view" id="interviewView">
+        <div class="interview-header">
+          <div><span class="live-dot"></span><strong>Mock interview</strong><span id="interviewRoleLabel"></span></div>
+          <div><span id="questionProgress">Question 1 of 8</span><span class="interview-timer" id="interviewTimer">00:00</span></div>
+        </div>
+        <div class="interview-stage">
+          <div class="coach-card">
+            <div class="coach-avatar">M<span></span></div>
+            <div><strong>Maya</strong><p>Your AI interview coach</p></div>
+          </div>
+          <div class="question-card">
+            <span class="question-type" id="questionType">RESUME DEEP DIVE</span>
+            <h2 id="currentQuestion"></h2>
+            <div class="question-tip"><span>✦</span><p><strong>Think before you answer.</strong> Use a specific example and explain your personal contribution.</p></div>
+          </div>
+          <div class="answer-area">
+            <div class="answer-heading"><label for="answerText">Your answer</label><span id="wordCount">0 words</span></div>
+            <textarea id="answerText" placeholder="Type your answer here. Aim for a clear 1–2 minute response..."></textarea>
+            <div class="answer-actions">
+              <button class="button button-ghost" id="skipQuestion">Skip for now</button>
+              <button class="button button-primary" id="submitAnswer">Submit answer <span>→</span></button>
+            </div>
+          </div>
+          <div class="question-dots" id="questionDots"></div>
+        </div>
+      </div>
+
+      <div class="app-view" id="reportView">
+        <div class="report-header">
+          <div><span class="kicker">YOUR COACHING REPORT</span><h2>Strong foundation. Sharpen the proof.</h2><p id="reportSubtitle"></p></div>
+          <button class="button button-ghost" id="restartInterview">Practice again</button>
+        </div>
+        <div class="score-grid">
+          <div class="panel overall-score">
+            <div class="score-ring" id="scoreRing"><div><strong id="overallScore">78</strong><span>/100</span></div></div>
+            <div><span>OVERALL PERFORMANCE</span><h3 id="scoreLabel">Interview ready</h3><p>Your experience comes through clearly. More concrete outcomes will make your answers memorable.</p></div>
+          </div>
+          <div class="panel metric-card"><span>Clarity</span><strong id="clarityScore">82</strong><div class="metric-bar"><i style="--score:82%"></i></div><small>Clear and easy to follow</small></div>
+          <div class="panel metric-card"><span>Specificity</span><strong id="specificityScore">71</strong><div class="metric-bar coral"><i style="--score:71%"></i></div><small>Add more numbers and details</small></div>
+          <div class="panel metric-card"><span>Structure</span><strong id="structureScore">79</strong><div class="metric-bar gold"><i style="--score:79%"></i></div><small>Good context-to-result flow</small></div>
+        </div>
+        <div class="report-grid">
+          <div class="panel report-panel">
+            <div class="report-panel-title"><span class="success-icon">✓</span><h3>What worked well</h3></div>
+            <ul id="strengthsList"></ul>
+          </div>
+          <div class="panel report-panel">
+            <div class="report-panel-title"><span class="improve-icon">↗</span><h3>Your next improvements</h3></div>
+            <ul id="improvementsList"></ul>
+          </div>
+        </div>
+        <div class="panel answer-review">
+          <div class="report-panel-title"><span class="panel-icon dark">≡</span><div><h3>Answer-by-answer review</h3><p>See where your responses landed and why.</p></div></div>
+          <div id="answerReviewList"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
